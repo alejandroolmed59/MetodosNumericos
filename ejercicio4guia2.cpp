@@ -34,7 +34,7 @@ void secant(long double p0,long double p1,long double TOL,int Nmax){
 	}
 } 
 
-void biseccion(long double a,long double b, long double Tol){
+void biseccionAux(long double a,long double b, long double Tol){
     float n;
     int nEntero;
     long double p;
@@ -43,23 +43,20 @@ void biseccion(long double a,long double b, long double Tol){
     for(int i=0; i<n; i++){
         
         p=(a+b)/2.0;
-        //cout<<setprecision(10)<<i<<"\t"<<a<<"\t"<<b<<"\t"<<p<<"\t"<<f(p)<<endl ;
         if((f(a)*f(p))>0){
             a=p;
         }else{
             b=p;
         }
     }
-    secant(p, p+1, pow(10,-12),100);
+    secant(p, p+ 0.1, pow(10,-12),100);
 }
-
-
 
 /*
  * 
  */
 int main(int argc, char** argv) {
-    biseccion(0.0,2.1,0.2);
+    biseccionAux(0.0,2.1,0.2);
     return 0;
 }
 
