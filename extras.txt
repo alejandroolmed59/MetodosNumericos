@@ -1,0 +1,19 @@
+#include <iostream> // std::cout, std::endl
+#include <cmath> //exp, std::abs, pow
+#include <iomanip> //std::setprecision
+
+using std::cout;	using std::endl;
+using std::abs;		using std::setprecision;
+
+
+Para pi:
+
+#include <math.h>
+# define M_PI    
+M_PI
+
+Para logaritmo base 10:
+log10();
+
+Para e^x
+exp(x);
