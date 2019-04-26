@@ -17,3 +17,7 @@ log10();
 
 Para e^x
 exp(x);
+
+PARA e:
+#include <math.h>
+M_E
