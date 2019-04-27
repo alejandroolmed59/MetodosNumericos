@@ -9,6 +9,10 @@
  * Author: Alejandro Olmedo <00097017@uca.edu.sv>
  *
  * Created on 24 de abril de 2019, 23:05
+-rapidez: O((1/2)^n)
+-Condicion necesaria: Debe ser f(a)*f(b)<0
+-Error>=(b-a/2^n)
+Tabla: n, a, b, p=a+b/2, f(p)
  */
 
 #include <iostream> // std::cout, std::endl

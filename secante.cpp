@@ -13,6 +13,7 @@ p0: aproximación inicial
 p1: aproximación inicial
 TOL: tolerancia
 Nmax: número máximo de iteraciones
+ * Tabla: n, p0, p1, p, E= abs(p-p1)
 */
 void secant(long double p0,long double p1,long double TOL,int Nmax){
 

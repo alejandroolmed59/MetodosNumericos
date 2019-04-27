@@ -13,6 +13,16 @@ Iteración de punto fijo
 p0: aproximación inicial
 Nmax: número máximo de iteraciones
 T: tolerancia
+-rapidez: O((k)^n)
+k= abs(g'(p)) ; p es el valor de la ultima iteracion del metodo ("la solucion")
+Condiciones:
+Existencia: g(x) toma numeros del interavlo y los vuelve a poner en el intervalo
+Unicidad: fmax(abs(g'(x), x ,a,b) y evaluando eso en abs(g'(x))<1
+Tabla: n, p
+
+Si k en ipf 0<k<0.5 es mas rapida que bisecc
+Si k en ipf 0.5<k<1 es mas lenta que bisecc
+Si k en ipf k=0 es son iguales
 */
 
  double g(double x){  

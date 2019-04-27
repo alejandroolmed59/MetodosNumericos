@@ -1,4 +1,4 @@
-#include <iostream> // std::cout, std::endl
+﻿#include <iostream> // std::cout, std::endl
 #include <cmath> //std::abs
 #include <iomanip> //std::setprecision
 
@@ -15,6 +15,7 @@ inline double p_hat(double p0, double p1, double p2){ return p0 - pow( p1-p0 , 2
 p0: aproximación inicial
 Nmax: número máximo de iteraciones
 T: tolerancia
+ * Tabla: p, pn, pn+1, pn+2, pgorro(p_hat), error=abs(pgorro-grroAnterior)PRIMERO FILA ES NULO
 */
 void aitken(double p0, int Nmax, double T){	
 

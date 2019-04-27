@@ -15,6 +15,7 @@ inline double df(double x) { return exp(x) - 1; }
 p0: Aproximación inicial
 TOL: tolerancia
 Nmax: número máximo de iteraciones
+ * Tabla: n , pn  ,pn+1 , Eabs =|pn+1 −pn | 
 */
 void newton(double p0,double TOL,double Nmax){
 

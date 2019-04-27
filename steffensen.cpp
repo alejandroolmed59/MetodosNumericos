@@ -1,4 +1,4 @@
-#include <iostream> // std::cout, std::endl
+﻿#include <iostream> // std::cout, std::endl
 #include <cmath> //std::abs
 #include <iomanip> //std::setprecision
 
@@ -17,6 +17,7 @@ p0: aproximación inicial
 Nmax: número máximo de iteraciones
 T: tolerancia
 Si no se usa long double, algún dato se puede aproximar a 0
+ * Tabla: p0^(n), p1^(n), p2^(n), pn^gorro, error (pn^gorro - p(n-1)^gorro)
 */
 void steffensen(long double p0, int Nmax, long double T){
 

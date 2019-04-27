@@ -21,3 +21,22 @@ exp(x);
 PARA e:
 #include <math.h>
 M_E
+
+#funfacts
+
+Bisec:
+-rapidez: O((1/2)^n)
+-Condicion necesaria: Debe ser f(a)*f(b)<0
+-Error>=(b-a/2^n)
+
+IPF:
+-rapidez: O((k)^n)
+k= abs(g'(p)) ; p es el valor de la ultima iteracion del metodo ("la solucion")
+Condiciones:
+Existencia: g(x) toma numeros del interavlo y los vuelve a poner en el intervalo
+Unicidad: fmax(abs(g'(x), x ,a,b) y evaluando eso en abs(g'(x))<1
+
+
+Si k en ipf 0<k<0.5 es mas rapida que bisecc
+Si k en ipf 0.5<k<1 es mas lenta que bisecc
+Si k en ipf k=0 es son iguales
